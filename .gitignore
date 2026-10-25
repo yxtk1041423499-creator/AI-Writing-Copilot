@@ -1,0 +1,73 @@
+# ==========================================
+# AI 智能写作助手 - Git 忽略规则规范
+# ==========================================
+
+# 1. 敏感信息与私有密钥 (严格禁止上传到公共仓库)
+.env
+.env.local
+.env.*.local
+*.key
+*key*.txt
+*secret*
+*token*
+desktop_key.txt
+
+# 2. Python 编译文件与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 3. Python 虚拟运行环境
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 4. Streamlit 缓存与配置
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# 5. IDE 与编辑器配置文件
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 6. 日志与临时调试文件
+*.log
+*.tmp
+*.bak
+*.swp
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 7. 测试产生的大体积结果文件 (可保留 .gitkeep)
+# 允许用户提交有价值的范例文档，但忽略临时生成的过大缓存
+# result/*.md
